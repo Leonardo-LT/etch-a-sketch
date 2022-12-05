@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(46, 44, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.2);
+}
+
+.main-container {
+    display: flex;
+    gap: 50px;
+
+    padding: 40px 20px;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    position: relative;
+
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.quadret {
+    background-color: white; 
+    transition-duration: 0.3s;
+}
+
+.commands{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+button{
+    width: 80px;
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    border-radius: 10px;
+    border: none;
+} 
+
+#colorPicker {
+    width: 80px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+#slider {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
