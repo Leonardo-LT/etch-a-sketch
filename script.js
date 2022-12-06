@@ -54,7 +54,7 @@ slider.addEventListener("change", (e) =>{
     draw(currentColor)
 })
 
-colorPicker.addEventListener("change", (e) =>{
+colorPicker.addEventListener("click", (e) =>{
     currentColor = colorPicker.value
     draw(currentColor)
 })
