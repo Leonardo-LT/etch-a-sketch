@@ -3,6 +3,7 @@ const slider = document.getElementById("gridSize")
 const gridSizeValue = document.getElementById("gridSizeValue")
 const eraseButton = document.getElementById("erase")
 const colorPicker = document.getElementById("colorPicker")
+const clear = document.getElementById("clear")
 
 let gridSize = 32
 gridSizeValue.textContent = gridSize
@@ -54,13 +55,21 @@ slider.addEventListener("change", (e) =>{
     draw(currentColor)
 })
 
-colorPicker.addEventListener("click", (e) =>{
+colorPicker.addEventListener("change", (e) =>{
     currentColor = colorPicker.value
     draw(currentColor)
 })
 
 eraseButton.addEventListener("click" , ()  =>{
     erase()
+})
+
+clear.addEventListener("click", () => {
+    for (let i = 0; i < quadret.length; i++) {
+        const div = quadret[i];
+        div.style.backgroundColor = "white"
+    }
+    draw(currentColor)
 })
 
 createGrid(gridSize)
